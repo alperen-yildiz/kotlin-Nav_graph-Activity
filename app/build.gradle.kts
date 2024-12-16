@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    
+    //nav_graph
     id ("kotlin-kapt")
     id ("androidx.navigation.safeargs.kotlin")
 }
@@ -51,8 +53,8 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    //nav_graph
     val nav_version = "2.8.5"
-    // Kotlin
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 }
