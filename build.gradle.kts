@@ -2,5 +2,6 @@
 plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.kotlin.android) apply false
+    //nav_graph
     id ("androidx.navigation.safeargs.kotlin") version "2.8.5" apply false
 }
